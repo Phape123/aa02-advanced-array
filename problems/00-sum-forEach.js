@@ -18,7 +18,7 @@ let sumForEach = function(arr) {
     })
     return totalSum;
 };
-console.log("I am pushing this");
+
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
