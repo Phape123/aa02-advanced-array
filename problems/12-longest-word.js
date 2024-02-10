@@ -16,10 +16,15 @@ console.log(longestWord('')); // ''
 */
 
 let longestWord = function(sentence) {
-    // Your code here 
+    let copy = sentence.split(' ');
+    let long = '';
+    copy.forEach(word => {
+        if(word.length > long.length) long = word;
+    })
+    return long;
 };
 
-// Your code here 
+// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

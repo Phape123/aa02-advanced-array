@@ -15,12 +15,19 @@ console.log(hasThreeVowels('dog'));             //  false
 console.log(hasThreeVowels('go home'));         //  false
 
 */
-
+const VOWELS = 'aeiouAEIOU';
 let hasThreeVowels = function(string) {
-    // Your code here 
+    let copy = string.split('');
+    let result = [];
+    copy.forEach(letter => {
+        if(VOWELS.includes(letter)){
+            if(!result.includes(letter)) result.push(letter);
+        }
+    })
+    return result.length >= 3;
 };
 
-// Your code here 
+// Your code here
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 
